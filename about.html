@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Food Website Design</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="#">
+                        <li>MENU</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">ORDER NOW</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    Here At Divine Fresh Fish. We Provide You Fresh And Delicious Fish At Doorstep. We Also Provide WholeSale Fish Deals At Reasonable Price.
+                </p>
+            </div>
+        </div>
+        <script>
+            var show = document.getElementById("nav-links")
+
+            function showMenu() {
+                show.style.right = "0";
+            }
+
+            function closeMenu() {
+                show.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
